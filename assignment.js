@@ -1,3 +1,6 @@
+//
+
+
 function kilometerToMeter(kInput) {
     if (kInput < 0) {
         console.log("Give Correct Input");
@@ -16,6 +19,9 @@ function budgetCalculator(wQnty, mQnty, lQnty) {
 }
 
 function hotelCost(dayCount) {
+    if (dayCount < 0) {
+        console.log("Please give correct Input");
+    }
     var hotelRent = 0;
     if (dayCount <= 10) {
         hotelRent = dayCount * 100;
@@ -44,15 +50,3 @@ function megaFriend(friendName) {
     }
     return friendName[maxIndex];
 }
-var friendName = "kalpa";
-var friendNamelen = megaFriend(friendName);
-console.log(friendNamelen);
-// var totalCost = hotelCost(25);
-// console.log(totalCost);
-
-// var budget = budgetCalculator(1, 1, 1);
-// console.log(budget);
-
-// var kTom = 5;
-// var tometer = kinlometerToMeter(kTom);
-// console.log(tometer);
